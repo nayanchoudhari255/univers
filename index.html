@@ -170,10 +170,18 @@ box-shadow: 0 0 3em white;
 		height: 8em;
 		animation: orbit 2.7s linear infinite;
 	}
+	.mars{
+
+	top: 5em;
+	left: 5em;
+	width: 40em;
+		height: 40em;
+		animation: orbit 36.5s linear infinite;
+}
 
 
 	.earth::before,
-	.moon::before{
+	.moon::before,.mars::before{
 		content: '';
 		position: absolute;
 		border-radius: 50%;
@@ -192,6 +200,13 @@ box-shadow: 0 0 3em white;
 		width: 1.2em;
 		height: 1.2em;
 		background-color: silver;
+	}
+	.mars::before{
+		top: 2.8em;
+		right: 2.8em;
+		width: 4em;
+		height: 4em;
+		background-color: red;
 	}
 	
 
@@ -218,6 +233,7 @@ box-shadow: 0 0 3em white;
 	<div class="earth">
 		<div class="moon"></div>
 	</div>
+	<div class="mars"></div>
 	
 </div>
 </body>
